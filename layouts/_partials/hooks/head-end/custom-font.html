@@ -72,16 +72,18 @@
     /* Keep text, this is just to ensure icons are hidden */
   }
   
-  /* Hide Hugo Blox branding badge/notification - specifically ID card icon badge */
-  /* Only target fixed/floating badges, buttons, or links with the ID card icon */
+  /* Hide Hugo Blox branding badge/notification - target any element with ID card icon */
+  /* Specifically targets elements containing the ID card icon SVG path */
+  svg:has(path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]),
+  svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Hide parent elements that contain the ID card icon (buttons, links, badges) */
   button:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]),
   a:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]),
-  [class*="fixed"]:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]),
-  [class*="absolute"]:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]),
-  [class*="blox-badge"]:has(svg path[d*="M15 9h3.75"]),
-  [class*="hbx-badge"]:has(svg path[d*="M15 9h3.75"]),
-  [id*="blox-badge"]:has(svg path[d*="M15 9h3.75"]),
-  [id*="hbx-badge"]:has(svg path[d*="M15 9h3.75"]) {
+  div:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]):not([class*="resume"]):not([class*="biography"]) {
     display: none !important;
     visibility: hidden !important;
     opacity: 0 !important;
