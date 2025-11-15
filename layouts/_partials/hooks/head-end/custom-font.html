@@ -26,5 +26,19 @@
   .font-sans, [class*="font-"] {
     font-family: var(--font-family-sans) !important;
   }
+  
+  /* Hide section headings/tags for cleaner look */
+  .resume-biography-3 h2:empty,
+  .resume-biography-3 h3:empty,
+  section h2:empty,
+  section h3:empty {
+    display: none !important;
+  }
+  
+  /* Hide section labels/tags if they're too prominent */
+  [class*="biography"] h2:first-child,
+  [class*="biography"] h3:first-child {
+    display: none !important;
+  }
 </style>
 

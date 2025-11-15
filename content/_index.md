@@ -19,9 +19,9 @@ sections:
         text: Download CV
         url: uploads/resume.pdf
       headings:
-        about: 'About Me'
-        education: 'Education'
-        interests: 'Interests'
+        about: ''
+        education: ''
+        interests: ''
     design:
       # Apply a gradient background
       css_class: hbx-bg-gradient
