@@ -72,23 +72,13 @@
     /* Keep text, this is just to ensure icons are hidden */
   }
   
-  /* Hide Hugo Blox branding badge/notification - target any element with ID card icon */
-  /* Specifically targets elements containing the ID card icon SVG path */
-  svg:has(path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]),
-  svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"] {
+  /* Hide Hugo Blox branding badge/notification - temporarily disabled */
+  /* Re-enable once site loads correctly - use specific class targeting */
+  /*
+  div[class*="flex-shrink-0"][class*="w-12"][class*="h-12"][class*="rounded-full"]:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]) {
     display: none !important;
-    visibility: hidden !important;
   }
-  
-  /* Hide parent elements that contain the ID card icon (buttons, links, badges) */
-  button:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]),
-  a:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]),
-  div:has(svg path[d*="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25"]):not([class*="resume"]):not([class*="biography"]) {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    pointer-events: none !important;
-  }
+  */
   
   /* Customize cite button icon - commented out to prevent issues */
   /* Uncomment and adjust selectors once you know the exact button class/id */
