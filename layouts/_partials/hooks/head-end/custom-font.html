@@ -27,18 +27,49 @@
     font-family: var(--font-family-sans) !important;
   }
   
-  /* Hide section headings/tags for cleaner look */
-  .resume-biography-3 h2:empty,
-  .resume-biography-3 h3:empty,
-  section h2:empty,
-  section h3:empty {
+  /* Hide icons next to section headings */
+  .resume-biography-3 h2 svg,
+  .resume-biography-3 h3 svg,
+  .resume-biography-3 h4 svg,
+  .resume-biography-3 h2 i,
+  .resume-biography-3 h3 i,
+  .resume-biography-3 h4 i,
+  .resume-biography-3 h2 [class*="icon"],
+  .resume-biography-3 h3 [class*="icon"],
+  .resume-biography-3 h4 [class*="icon"],
+  section h2 svg,
+  section h3 svg,
+  section h4 svg,
+  section h2 i,
+  section h3 i,
+  section h4 i,
+  section h2 [class*="icon"],
+  section h3 [class*="icon"],
+  section h4 [class*="icon"],
+  [class*="biography"] h2 svg,
+  [class*="biography"] h3 svg,
+  [class*="biography"] h4 svg {
     display: none !important;
   }
   
-  /* Hide section labels/tags if they're too prominent */
-  [class*="biography"] h2:first-child,
-  [class*="biography"] h3:first-child {
+  /* Hide icon containers/wrappers next to headings */
+  .resume-biography-3 h2 > *:first-child:has(svg),
+  .resume-biography-3 h3 > *:first-child:has(svg),
+  .resume-biography-3 h4 > *:first-child:has(svg),
+  section h2 > *:first-child:has(svg),
+  section h3 > *:first-child:has(svg),
+  section h4 > *:first-child:has(svg),
+  [class*="biography"] h2 > *:first-child:has(svg),
+  [class*="biography"] h3 > *:first-child:has(svg),
+  [class*="biography"] h4 > *:first-child:has(svg) {
     display: none !important;
+  }
+  
+  /* Hide icons that are siblings of text in headings */
+  .resume-biography-3 h2 svg + *,
+  .resume-biography-3 h3 svg + *,
+  .resume-biography-3 h4 svg + * {
+    /* Keep text, this is just to ensure icons are hidden */
   }
 </style>
 
