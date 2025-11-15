@@ -11,5 +11,5 @@ main:
     url: publications/
     weight: 20
   - name: Resume
-    url: resume/
+    url: uploads/resume.pdf
     weight: 30
