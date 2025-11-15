@@ -14,17 +14,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
-  analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
-  verification:
-    google: ''
-    baidu: ''
+    description: 'MSc Student in Computer Science at McMaster University'
+    twitter: 'xavierhillroy'  
 
 # Site header
 header:
@@ -49,7 +40,7 @@ footer:
 
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
+  date_format: 'Jan 2, 2025'
   time_format: '3:04 PM'
 
 # Site features

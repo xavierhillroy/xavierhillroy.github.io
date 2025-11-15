@@ -71,5 +71,33 @@
   .resume-biography-3 h4 svg + * {
     /* Keep text, this is just to ensure icons are hidden */
   }
+  
+  /* Hide Hugo Blox branding badge/notification */
+  [class*="blox-badge"],
+  [class*="hbx-badge"],
+  [class*="hugo-blox-badge"],
+  [id*="blox-badge"],
+  [id*="hbx-badge"],
+  [id*="hugo-blox-badge"],
+  [data-blox-badge],
+  .blox-badge,
+  .hbx-badge,
+  a[href*="hugoblox.com"]:has(svg),
+  a[href*="hugoblox.com"]:has([class*="icon"]),
+  /* Hide fixed/floating circular badges with ID card icons */
+  [class*="fixed"]:has(svg[class*="id-card"]),
+  [class*="fixed"]:has([class*="icon"][class*="id"]),
+  button[class*="fixed"]:has(svg),
+  a[class*="fixed"]:has(svg),
+  /* Hide any circular purple/indigo badges */
+  [class*="rounded-full"][class*="bg-purple"],
+  [class*="rounded-full"][class*="bg-indigo"],
+  [style*="border-radius: 50%"][style*="purple"],
+  [style*="border-radius: 50%"][style*="indigo"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
 </style>
 
