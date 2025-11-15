@@ -80,6 +80,34 @@
   }
   */
   
+  /* Hide footer and Hugo Blox branding */
+  footer,
+  [class*="footer"],
+  a[href*="hugoblox.com"],
+  a[href*="hugoblox.com"] *,
+  button[href*="hugoblox.com"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Hide publication links/icons (DOI, PDF, CODE, DATASET, CITE) */
+  [class*="publication-links"],
+  [class*="btn-links"],
+  [data-links],
+  button[aria-label*="DOI"],
+  button[aria-label*="PDF"],
+  button[aria-label*="CODE"],
+  button[aria-label*="DATASET"],
+  button[aria-label*="CITE"],
+  a[title*="DOI"],
+  a[title*="PDF"],
+  a[title*="CODE"],
+  a[title*="DATASET"],
+  a[title*="CITE"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
   /* Customize cite button icon - commented out to prevent issues */
   /* Uncomment and adjust selectors once you know the exact button class/id */
   /*

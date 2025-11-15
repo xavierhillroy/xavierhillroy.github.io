@@ -32,15 +32,7 @@ hugoblox:
     doi: 10.3390/electronics14204116
 
 # Custom links
-links:
-  - type: doi
-    url: https://doi.org/10.3390/electronics14204116
-  - type: pdf
-    url: ""
-  - type: code
-    url: ""
-  - type: dataset
-    url: ""
+links: []
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
