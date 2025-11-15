@@ -90,36 +90,20 @@
     pointer-events: none !important;
   }
   
-  /* Customize cite button icon - replace the default icon */
-  /* Target cite buttons by their title, aria-label, or data attributes */
-  button[title*="Cite"] svg,
-  button[title*="cite"] svg,
-  a[title*="Cite"] svg,
-  a[title*="cite"] svg,
-  button[aria-label*="Cite"] svg,
-  button[aria-label*="cite"] svg,
-  a[aria-label*="Cite"] svg,
-  a[aria-label*="cite"] svg,
-  [data-action*="cite"] svg,
-  [data-action*="Cite"] svg {
+  /* Customize cite button icon - commented out to prevent issues */
+  /* Uncomment and adjust selectors once you know the exact button class/id */
+  /*
+  button[title="Cite"] svg,
+  a[title="Cite"] svg {
     display: none !important;
   }
   
-  /* Add custom cite icon - change the emoji/content to your preferred icon */
-  button[title*="Cite"]::before,
-  button[title*="cite"]::before,
-  a[title*="Cite"]::before,
-  a[title*="cite"]::before,
-  button[aria-label*="Cite"]::before,
-  button[aria-label*="cite"]::before,
-  a[aria-label*="Cite"]::before,
-  a[aria-label*="cite"]::before,
-  [data-action*="cite"]::before,
-  [data-action*="Cite"]::before {
-    content: "📋"; /* Options: "📋" clipboard, "📄" document, "🔗" link, "📝" memo, or use icon name */
+  button[title="Cite"]::before,
+  a[title="Cite"]::before {
+    content: "📋";
     display: inline-block;
     margin-right: 0.25rem;
-    font-size: 1em;
   }
+  */
 </style>
 
