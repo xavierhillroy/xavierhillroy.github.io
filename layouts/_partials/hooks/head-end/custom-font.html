@@ -90,7 +90,7 @@
     visibility: hidden !important;
   }
   
-  /* Hide publication links/icons (DOI, PDF, CODE, DATASET, CITE) */
+  /* Hide publication links/icons (DOI, PDF, CODE, DATASET, CITE) and cite button */
   [class*="publication-links"],
   [class*="btn-links"],
   [data-links],
@@ -99,11 +99,56 @@
   button[aria-label*="CODE"],
   button[aria-label*="DATASET"],
   button[aria-label*="CITE"],
+  button[title*="Cite"],
+  button[title*="cite"],
   a[title*="DOI"],
   a[title*="PDF"],
   a[title*="CODE"],
   a[title*="DATASET"],
-  a[title*="CITE"] {
+  a[title*="CITE"],
+  a[title*="Cite"],
+  a[title*="cite"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Hide "Last updated" timestamp */
+  [class*="last-updated"],
+  [class*="date-updated"],
+  [class*="meta-date"],
+  time[class*="updated"],
+  time[datetime] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Hide social media/share icons (Twitter, Facebook, Email, LinkedIn, WhatsApp) */
+  [class*="social-share"],
+  [class*="share-buttons"],
+  [class*="social-links"],
+  [class*="sharing"],
+  button[aria-label*="Twitter"],
+  button[aria-label*="Facebook"],
+  button[aria-label*="Email"],
+  button[aria-label*="LinkedIn"],
+  button[aria-label*="WhatsApp"],
+  button[aria-label*="Share"],
+  a[href*="twitter.com"],
+  a[href*="facebook.com"],
+  a[href*="mailto:"],
+  a[href*="linkedin.com"],
+  a[href*="whatsapp.com"],
+  a[title*="Twitter"],
+  a[title*="Facebook"],
+  a[title*="Email"],
+  a[title*="LinkedIn"],
+  a[title*="WhatsApp"],
+  a[title*="Share"],
+  a[aria-label*="Twitter"],
+  a[aria-label*="Facebook"],
+  a[aria-label*="Email"],
+  a[aria-label*="LinkedIn"],
+  a[aria-label*="WhatsApp"] {
     display: none !important;
     visibility: hidden !important;
   }
