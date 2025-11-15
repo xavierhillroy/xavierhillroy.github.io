@@ -26,8 +26,8 @@ profiles:
     url: https://github.com/xavierhillroy
   - icon: brands/linkedin
     url: https://linkedin.com/in/xavier-hill-roy
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+  # - icon: academicons/google-scholar
+  #   url: https://scholar.google.com/
 
 interests:
   - Linear Genetic Programming
