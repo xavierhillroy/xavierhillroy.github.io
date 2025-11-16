@@ -26,5 +26,43 @@
   .font-sans, [class*="font-"] {
     font-family: var(--font-family-sans) !important;
   }
+  
+  /* Hide footer completely */
+  footer,
+  [class*="footer"],
+  a[href*="hugoblox.com"],
+  a[href*="hugoblox.com"] *,
+  button[href*="hugoblox.com"] {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Hide Hugo Blox footer branding text and button */
+  footer a,
+  footer button,
+  [class*="footer"] a,
+  [class*="footer"] button {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  
+  /* Remove clickability from publications - make them non-clickable */
+  [class*="publication"] a,
+  [class*="citation"] a,
+  [data-publication] a,
+  a[href*="/publications/"] {
+    pointer-events: none !important;
+    cursor: default !important;
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+  
+  /* Remove hover effects from publication links */
+  [class*="publication"] a:hover,
+  [class*="citation"] a:hover,
+  a[href*="/publications/"]:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
 </style>
 
