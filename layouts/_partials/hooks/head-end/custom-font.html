@@ -26,5 +26,51 @@
   .font-sans, [class*="font-"] {
     font-family: var(--font-family-sans) !important;
   }
+  
+  /* Pokemon-style sunset ocean background */
+  body {
+    background-image: url('/pokemon-sunset-bg.svg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  /* Remove default backgrounds to show custom background */
+  [class*="hbx-bg-gradient"],
+  [class*="bg-gradient"] {
+    background: transparent !important;
+  }
+  
+  /* Ensure content readability with subtle overlay */
+  main, [class*="container"], [class*="content"] {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Make resume-biography section transparent with backdrop blur */
+  [class*="resume-biography"] {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Publications section */
+  section[class*="collection"],
+  [class*="publications"] {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
 </style>
 
