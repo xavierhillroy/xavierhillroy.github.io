@@ -46,23 +46,47 @@
     visibility: hidden !important;
   }
   
-  /* Remove clickability from publications - make them non-clickable */
-  [class*="publication"] a,
-  [class*="citation"] a,
-  [data-publication] a,
-  a[href*="/publications/"] {
+  /* Remove clickability from publication titles - make them non-clickable */
+  /* But allow DOI and other external links to remain clickable */
+  [class*="publication"] a[href*="/publications/"],
+  [class*="citation"] a[href*="/publications/"],
+  a[href*="/publications/"][href*="enhancing-jpeg-xl"] {
     pointer-events: none !important;
     cursor: default !important;
     text-decoration: none !important;
     color: inherit !important;
   }
   
-  /* Remove hover effects from publication links */
-  [class*="publication"] a:hover,
-  [class*="citation"] a:hover,
-  a[href*="/publications/"]:hover {
+  /* Remove hover effects from publication title links */
+  [class*="publication"] a[href*="/publications/"]:hover,
+  [class*="citation"] a[href*="/publications/"]:hover {
     text-decoration: none !important;
     color: inherit !important;
+  }
+  
+  /* Keep DOI links clickable - allow links to doi.org, dx.doi.org, or with doi in them */
+  a[href*="doi.org"],
+  a[href*="dx.doi.org"],
+  a[href*="doi:"],
+  a[title*="DOI"],
+  a[aria-label*="DOI"],
+  button[aria-label*="DOI"] {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    text-decoration: underline !important;
+  }
+  
+  /* Hide the cite button specifically */
+  button[title*="Cite"],
+  button[title*="cite"],
+  button[aria-label*="Cite"],
+  button[aria-label*="cite"],
+  a[title*="Cite"],
+  a[title*="cite"],
+  a[aria-label*="Cite"],
+  a[aria-label*="cite"] {
+    display: none !important;
+    visibility: hidden !important;
   }
 </style>
 
